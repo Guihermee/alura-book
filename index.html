@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="./styles/reset.css">
 </head>
 <body>
-    <h1>Alura Books</h1>
+    <header class="cabecalho">
+        
+        <div class="conteiner__cabecalho__direito">
+            <input type="checkbox" id="menu" class="conteiner__botao">
+            <label for="menu">
+                <span class="conteiner__cabecalho__menu conteiner__imagem"></span>
+            </label>
+            <ul class="lista__menu">
+                <li class="lista__menu__titulo">Categorias</li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">PROGRAMAÇÃO</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">FRONT-END</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">INFRAESTRUTURA</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">BUSINESS</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">DESIGN & UX</a></li>
+            </ul>
+            <img class="conteiner__imagem" src="./img/Logo.svg" alt="Logo do AluraBooks">
+        </div>
+        <div class="conteiner__cabecalho__esquerdo">
+            <a href="#"><img class="conteiner__imagem" src="./img/Favoritos.svg" alt="Icone do Favoritos"></a>
+            <a href="#"><img class="conteiner__imagem" src="./img/Sacola.svg" alt="Icone da Sacola"></a>
+            <a href="#"><img class="conteiner__imagem" src="./img/Usuario.svg" alt="Icone do Usuário"></a>
+        </div>
+        </header>
 </body>
 </html>
