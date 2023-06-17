@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url(./header.css);
+@import url(./banner.css);
+@import url(./carrossel.css);
+@import url(./main.css);
 
 :root {
     --azul_principal: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --laranja_secundario: #EB9B00;
     --branco_principal: #FFFFFF;
+    --branco_secundario: #F9F9F9;
     --cinza_secundario: #C4C4C4;
     --cor_de_fundo: #EBECEE;
+    --preto: #000000;
+    --azul_semlinear: #002F51;
 
-    --font_principal: font-family: 'Poppins', sans-serif;
+    --font_principal: 'Poppins', sans-serif;
 }
 
 body {
     background-color: var(--cor_de_fundo);
-    font-family: var(font_principal);
+    font-family: var(--font_principal);
     font-weight: 400;
     font-size: 1rem;
 }

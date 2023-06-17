@@ -29,7 +29,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 70vw;
+    width: 60vw;
 }
 
 .conteiner__botao:checked ~ .lista__menu{
@@ -46,10 +46,18 @@
     font-weight: 700;
 }
 
+.lista__menu__link:hover {
+    background-color: var(--cinza_secundario);
+}
+
 .texto__menu {
     background: var(--azul_principal);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: none;
+}
+
+.conteiner__botao {
+    display: none;
 }
