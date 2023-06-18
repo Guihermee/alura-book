@@ -73,3 +73,32 @@
 .card__dois__image {
     padding-bottom: 0.5em;
 }
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 1.5em;
+        padding-top: 2em;
+    }
+    
+    .swiper-pagination {
+        margin: 2em 2.5em;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-slide {
+        padding: 1em;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+}

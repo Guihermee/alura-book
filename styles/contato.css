@@ -1,0 +1,63 @@
+.fim__da__pagina {
+    text-align: left;
+    background-color: var(--branco_principal);
+    color: var(--azul_semlinear);
+    padding: 2em;
+}
+
+.fim__titulo, .fim__texto {
+    background: var(--azul_principal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fim__titulo {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.fim__texto{
+    font-weight: 300;
+    padding: 1em 0;
+}
+
+.fim__cadastro {
+    background-color: transparent;
+    color: var(--azul_principal);
+    border: 1px solid var(--azul_semlinear);
+    border-radius: 1.5rem;
+    padding: 1em;
+    width: 90%;
+}
+
+.fim__cadastro::placeholder {
+    font-family: var(--font_principal);
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 2em;
+    color: var(--azul_principal);
+    background: url(../img/Email.svg) no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+    .fim__da__pagina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fim__titulo {
+        font-size: 1.5rem;
+    }
+
+    .contato_textos {
+
+        margin-right: 2em;
+        width: 30%;
+    }
+
+    .fim__cadastro {
+        width: 30%;
+    }
+}
