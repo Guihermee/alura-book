@@ -48,3 +48,9 @@
         font-size: 1.5rem;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .topico {
+        padding: 4em 22vw;
+    }
+}

@@ -63,7 +63,8 @@
 }
 
 .logo__titulo,
-.opcoes {
+.opcoes,
+.descricao__esquerdo__item {
     display: none;
 }
 
@@ -108,5 +109,24 @@
 
     .opcoes__botao {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .descricao__esquerdo__item {
+        display: block;
+    }
+
+    .conteiner__link {
+        display: flex;
+        align-items: center;
+        padding-right: 3em;
+        text-decoration: none;
+        color: var(--preto);
+        font-size: 1.2rem;
+    }
+
+    .opcoes {
+        margin-right: auto;
     }
 }

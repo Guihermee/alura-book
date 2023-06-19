@@ -43,3 +43,14 @@ hr {
         font-size: 1.5rem;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .rodape__lista {
+        border-left: 1px solid var(--cinza_fraco);
+        padding-left: 2em;
+    }
+
+    .rodape {
+        padding: 4em 0;
+    }
+}
