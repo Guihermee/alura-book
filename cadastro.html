@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS do carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    
+    <!-- Meu CSS e o reset -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Formulário de cadastro</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="conteiner__cabecalho__direito">
+            <input type="checkbox" id="menu" class="conteiner__botao">
+            <label for="menu" class="conteiner__label">
+                <span class="conteiner__cabecalho__menu conteiner__imagem"></span>
+            </label>
+            <ul class="lista__menu">
+                <li class="lista__menu__titulo">Categorias</li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">PROGRAMAÇÃO</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">FRONT-END</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">INFRAESTRUTURA</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">BUSINESS</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">DESIGN & UX</a></li>
+            </ul>
+            <a href="./index.html"><img class="conteiner__imagem" src="./img/Logo.svg" alt="Logo do AluraBooks"></a>
+            <h1 class="logo__titulo"><b class="negrito__titulo">Alura</b>Books</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+            <label for="opcoes__menu" class="opcoes__label">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista__menu">
+                <li class="lista__menu_link"><a class="texto__menu" href="#">PROGRAMAÇÃO</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">FRONT-END</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">INFRAESTRUTURA</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">BUSINESS</a></li>
+                <li class="lista__menu_link"><a class="texto__menu" href="#">DESIGN & UX</a></li>
+            </ul>
+
+            <li class="opcoes__item"><a class="opcoes__item__link" href="#">Favoritos</a></li>
+            <li class="opcoes__item"><a class="opcoes__item__link" href="#">Minha Estante</a></li>
+        </ul>
+
+        <div class="conteiner__cabecalho__esquerdo">
+            <a href="#"><img class="conteiner__imagem conteiner__transparente" src="./img/Favoritos.svg"
+                    alt="Icone do Favoritos"></a>
+
+            <a class="conteiner__link" href="#">
+                <img class="conteiner__imagem" src="./img/Sacola.svg" alt="Icone da Sacola">
+                <p class="descricao__esquerdo__item">Minha Sacola</p>
+            </a>
+            <a class="conteiner__link" href="#">
+                <img class="conteiner__imagem" src="./img/Usuario.svg" alt="Icone do Usuário">
+                <p class="descricao__esquerdo__item">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <!-- Fim do Cabeçalho -->
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2 class="banner__titulo">Tela de cadastro</h2>
+    </section>
+    <!-- Fim do Banner -->
+
+    <!-- Formulário -->
+    <main class="principal">
+        <h2 class="principal__titulo">Dados do cadastro</h2>
+
+        <form class="principal__formulario" id="formulario" target="_blank"
+            onsubmit="location.replace('./cadastro-finalizado.html')">
+            <h3 class="principal__subtitulo">Dados pessoais</h3>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="nome">Nome Completo</label>
+                <input name="nome" id="nome" class="campo__escrita" required />
+            </div>
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="nascimento">Nascimento</label>
+                    <input name="nascimento" id="nascimento" type="date" class="campo__escrita" required />
+                </div>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="telefone">Contato</label>
+                    <input name="telefone" id="telefone" type="tel" placeholder="(XX) XXXXX-XXXX" class="campo__escrita"
+                        required />
+                </div>
+            </div>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="email">E-mail</label>
+                <input name="email" id="email" type="email" class="campo__escrita" required />
+            </div>
+
+            <h3 class="principal__subtitulo">Endereço</h3>
+
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="cep">CEP</label>
+                <input name="cep" id="cep" class="campo__escrita" required />
+            </div>
+
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="endereco">Endereço</label>
+                <input name="endereco" id="endereco" class="campo__escrita" required />
+            </div>
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="numero">Numero</label>
+                    <input name="numero" id="numero" class="campo__escrita" required />
+                </div>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="complemento">Complemento</label>
+                    <input name="complemento" id="complemento" class="campo__escrita" />
+                </div>
+            </div>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="bairro">Bairro</label>
+                <input name="bairro" id="bairro" class="campo__escrita" required />
+            </div>
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="cidade">Cidade</label>
+                    <input name="cidade" id="cidade" class="campo__escrita" required />
+                </div>
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="estado">UF</label>
+                    <select id="estado" name="estado" class="campo__escrita">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <input type="submit" value="Enviar formulário" class="formulario__botao" id="enviar">
+        </form>
+    </main>
+    <!-- Fim do formulario -->
+    
+    <!-- Rodape -->
+    <hr>
+    <footer class="rodape">
+        <p class="nino">Grupo Nino</p>
+        <ul class="rodape__lista">
+            <li class="rodape__titulo">Educação</li>
+            <li class="rodape__lista__item">
+                <img src="./img/Caelum.svg" alt="Logo da Caelum">
+                <a class="item__texto" href="#"> Caelum</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/CasaDoCodigo.svg" alt="Logo da Casa do código">
+                <a class="item__texto" href="#"> Casa do Código</a>
+            </li>
+        </ul>
+
+        <ul class="rodape__lista">
+            <li class="rodape__titulo">Educação Online</li>
+            <li class="rodape__lista__item">
+                <img src="./img/Alura.svg" alt="Logo da Alura">
+                <a class="item__texto" href="#"> Alura</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/AluraEmpresas.svg" alt="Logo da Alura para Empresas">
+                <a class="item__texto" href="#">Alura Para Empresas</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/AluraLATAM.svg" alt="Logo da Alura LATAM">
+                <a class="item__texto" href="#">Alura LATAM</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/AluraStart.svg" alt="Logo da Alura Start">
+                <a class="item__texto" href="#">Alura Start</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/MusicDot.svg" alt="Logo da MusicDot">
+                <a class="item__texto" href="#">MusicDot</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/AluraLingua.svg" alt="Logo da Alura AluraLingua">
+                <a class="item__texto" href="#">Alura Língua</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/PM3.svg" alt="Logo da PM3">
+                <a class="item__texto" href="#">PM3</a>
+            </li>
+        </ul>
+
+        <ul class="rodape__lista">
+            <li class="rodape__titulo">Comunidade</li>
+            <li class="rodape__lista__item">
+                <img src="./img/HipstersTech.svg" alt="Logo da Hipsters ponto Tech">
+                <a class="item__texto" href="#"> Hipsters ponto Tech</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/ScubaDev.svg" alt="Logo da Scuba Dev">
+                <a class="item__texto" href="#">Scuba Dev</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/LayersTech.svg" alt="Logo da Layers ponto Tech">
+                <a class="item__texto" href="#">Layers ponto Tech</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/LikeABoss.svg" alt="Logo da Like a boss">
+                <a class="item__texto" href="#">Like a Boss</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/CarreiraSemFronteira.svg" alt="Logo da Carreira Sem Fronteira">
+                <a class="item__texto" href="#">Carreira sem Fronteira</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/HipstersJobs.svg" alt="Logo da Hipsters ponto Jobs">
+                <a class="item__texto" href="#">Hipsters ponto Jobs</a>
+            </li>
+            <li class="rodape__lista__item">
+                <img src="./img/GUJ.svg" alt="Logo da GUJ">
+                <a class="item__texto" href="#">GUJ</a>
+            </li>
+        </ul>
+
+    </footer>
+    <!-- Fim do rodapé -->
+
+</body>
+
+</html>

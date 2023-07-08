@@ -6,6 +6,7 @@
 @import url(./topico.css);
 @import url(./contato.css);
 @import url(./rodape.css);
+@import url(./formulario.css);
 
 :root {
     --azul_principal: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
@@ -18,6 +19,7 @@
     --azul_semlinear: #002F51;
     --cinza: #474646;
     --cinza_fraco: #858585;
+    --vermelho: red;
 
 
     --font_principal: 'Poppins', sans-serif;
