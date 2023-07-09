@@ -58,8 +58,9 @@
 
 .formulario__erro {
     display: flex;
-    margin-top: .5em;
+    margin-top: 1em;
     align-items: center;
+    justify-content: center;
 }
 
 .erro__imagem {
@@ -75,4 +76,5 @@
     font-size: 12px;
     line-height: 18px;
     color: var(--vermelho);
+    width: auto;
 }
